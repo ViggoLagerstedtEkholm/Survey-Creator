@@ -1,38 +1,78 @@
-.App {
+.container {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.title{
+  font-family: "Cascadia Code", serif;
+}
+
+.content-pagination {
+  padding: 10px;
+}
+
+.content-pagination h1{
   text-align: center;
+  font-family: "Cascadia Code", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-pagination-bar {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.content-pagination-bar div {
+  padding: 10px;
+  flex: 1;
+}
+
+.pagination-button {
+  border-radius: 5px;
+  background-color: #449be3;
   color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-button:hover{
+  transform: scale(1.009);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: auto;
+  border-radius: 5px;
+  padding: 15px;
+  overflow: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }
